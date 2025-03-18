@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans+HK:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=MedievalSharp&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width:100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(120deg,rgb(19, 19, 19), rgb(57, 57, 57));
+}
+.mainContainer{
+    padding: 4px;
+    border-radius: 6px;
+}
+.heading{
+    width: 96vw;
+    margin: 16px;
+    font-size: 4vw;
+    font-family: "Satisfy",serif;
+    text-align: center;
+    font-weight: bolder;
+    background: linear-gradient(45deg, #af8455,  #b6edb8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.9s;
+}
+.heading:hover{
+    transform: scale(1.1);
+}
+.introContainer{
+    display: flex;
+    width: 90vw;
+    gap:1vw;
+    font-size: clamp(20px, 1vw, 40px);
+    margin: auto;
+    font-family: "Merriweather Sans";
+    font-weight: bolder;
+}
+.intro{
+    width:50vw;
+    height: 40vh;
+    color:rgb(189, 177, 184);
+    transition: all 1s;
+}
+.intro h1{
+    font-family: "Cinzel";
+    transition: all 1s;
+    font-size: clamp(32px, 2vw, 60px);
+    width: 20vw;
+    padding: 1px;
+}
+.intro h1:hover{
+    transform: scale(1.1);
+    width:25px;
+}
+.intro p{
+    transition: all 1s;
+}
+.intro p:hover{
+    transform: scale(1.1);
+}
+.quote{
+    font-size: clamp(30px, 3.6vw, 60px);
+    font-family: "Eagle Lake",serif;
+    background: linear-gradient(45deg, #ecb880,  #05740a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 1s;
+    text-shadow: 0px 0px 10px rgba(111, 96, 96, 0.8);
+}
+.quote:hover{
+    transform: scale(1.1);
+}
+.image{
+    border-radius: 10px;
+    box-shadow: 4px 3px 4px rgb(246, 247, 245);
+    margin: 6px;
+    width:30vw;
+    height: 50vh;
+    transition: all 1s;
+}
+.image:hover{
+    transform: scale(1.05);
+}
+.imageBox{
+    background-color: rgb(227, 222, 222);
+    color:rgb(40, 35, 35);
+    width: 45px;
+    height: 30px;
+    font-size: small;
+    padding: 2px;
+    display: flex;
+    border-radius: 6px;
+    transition: all 1s;
+}
+.image2{
+    width: 0px;
+    height: 0px;
+    border-radius: 8px;
+    gap:5px;
+    transition: all 1s;
+}
+.imageBox:hover {
+    font-size: 0;
+}
+.imageBox:hover .image2{
+    width:20vw;
+    height: 50vh;
+}
+.imageBox:hover ~ .intro {
+    opacity: 0 ;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.aboutContainer , .contributionsContainer{
+    padding: 4px;
+    margin: auto;
+    color: rgb(180, 173, 194);
+    margin-top: 10px;
+    border: 2px solid rgb(244, 241, 241);
+    border-radius: 10px;
+    width:90vw;
+    box-shadow: 5px 4px 3px white;
+    font-size: clamp(20px, 1vw, 40px);
+    font-family: "Poppins";
+    background-image: linear-gradient(to bottom right,rgb(10, 19, 21), rgb(83, 87, 86));
+    text-shadow: 0px 0px 10px rgba(111, 96, 96, 0.8);
+    transition: all 0.5s;
+}
+.aboutContainer:hover{
+    transform:scale(1.05);
+    margin-top: 20px;
+    margin-bottom: 28px;
+}
+.contributionsContainer:hover{
+    transform:scale(1.05);
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    margin: 4px;
+    padding: 2px;
+}
+
+.footer{
+    color: white;
+    background-image: linear-gradient(to bottom right,rgb(33, 35, 35), rgb(83, 87, 86));
+    width:90vw;
+    height: 10vh;
+    margin: 0px;
+    padding: 4px;
+    font-size:clamp(15px, 1vw, 20px);
+    border-radius: 8px;
+    text-align: center;
+}
+.footer img{
+    width:4vw;
+    height: 6vh;
+    border-radius: 50%;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: clamp(20px, 1vw, 40px);
+}
+
+@media screen and (max-width:500px) {
+    .quote{
+        font-size: 18px;
+    }
+    .aboutContainer, .contributionsContainer, .intro{
+        font-size: small;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+}
